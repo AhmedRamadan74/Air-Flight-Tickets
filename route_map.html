@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0660ae310f29ef84eb48bfe7a16ab9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e3510c805915fa161a40100bf46e9e91 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_77ab7ab6dc1bc44cdbf13ac6ee82a1da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa6926adeedcb8c709c2aadcbbca6d22 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_244196829edacb55a0fff63d850dcf46 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d91ee9ef1c34a616c71c4a9146433aba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7665112df100a562158cfd9d8521ff0f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a0660ae310f29ef84eb48bfe7a16ab9b" ></div>
+        
+    
+            <div class="folium-map" id="map_e3510c805915fa161a40100bf46e9e91" ></div>
+        
+    
+            <div class="folium-map" id="map_77ab7ab6dc1bc44cdbf13ac6ee82a1da" ></div>
+        
+    
+            <div class="folium-map" id="map_fa6926adeedcb8c709c2aadcbbca6d22" ></div>
+        
+    
+            <div class="folium-map" id="map_244196829edacb55a0fff63d850dcf46" ></div>
+        
+    
+            <div class="folium-map" id="map_d91ee9ef1c34a616c71c4a9146433aba" ></div>
+        
+    
+            <div class="folium-map" id="map_7665112df100a562158cfd9d8521ff0f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a0660ae310f29ef84eb48bfe7a16ab9b = L.map(
+                "map_a0660ae310f29ef84eb48bfe7a16ab9b",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc70e510235c6e07896c8caa09a3f308 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fc70e510235c6e07896c8caa09a3f308.addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+            var map_e3510c805915fa161a40100bf46e9e91 = L.map(
+                "map_e3510c805915fa161a40100bf46e9e91",
+                {
+                    center: [28.6273928, 77.1716954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_70307e888c9d2fa082107fd2d607fd89 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_70307e888c9d2fa082107fd2d607fd89.addTo(map_e3510c805915fa161a40100bf46e9e91);
+        
+    
+            var marker_7de0d985e90e56e987d48979ec3abbc3 = L.marker(
+                [28.6273928, 77.1716954],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_b406578b38ecbad4579a7657675c8fed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76c8b6c740a0b824ac5f3e4a5a6b74d9 = $(`<div id="html_76c8b6c740a0b824ac5f3e4a5a6b74d9" style="width: 100.0%; height: 100.0%;">Delhi</div>`)[0];
+                popup_b406578b38ecbad4579a7657675c8fed.setContent(html_76c8b6c740a0b824ac5f3e4a5a6b74d9);
+            
+        
+
+        marker_7de0d985e90e56e987d48979ec3abbc3.bindPopup(popup_b406578b38ecbad4579a7657675c8fed)
+        ;
+
+        
+    
+    
+            var marker_7613d5cfa8b53b7c2f9e8ca5d760b704 = L.marker(
+                [9.9674277, 76.2454436],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_4114ca5f8a301550e84f3dd4213ee882 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a90f968ac631285f3a881ea12988976 = $(`<div id="html_2a90f968ac631285f3a881ea12988976" style="width: 100.0%; height: 100.0%;">Cochin</div>`)[0];
+                popup_4114ca5f8a301550e84f3dd4213ee882.setContent(html_2a90f968ac631285f3a881ea12988976);
+            
+        
+
+        marker_7613d5cfa8b53b7c2f9e8ca5d760b704.bindPopup(popup_4114ca5f8a301550e84f3dd4213ee882)
+        ;
+
+        
+    
+    
+            var poly_line_d1234d83f10b03739c3eae8757ee739c = L.polyline(
+                [[28.6273928, 77.1716954], [9.9674277, 76.2454436]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_5b1567912dd5cd523e29a5856a5065ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8ed975dc5daae699075651389d55771 = $(`<div id="html_b8ed975dc5daae699075651389d55771" style="width: 100.0%; height: 100.0%;">Delhi → Cochin have 4057 flight</div>`)[0];
+                popup_5b1567912dd5cd523e29a5856a5065ea.setContent(html_b8ed975dc5daae699075651389d55771);
+            
+        
+
+        poly_line_d1234d83f10b03739c3eae8757ee739c.bindPopup(popup_5b1567912dd5cd523e29a5856a5065ea)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a5a08bfd654319c1f73e3afc425f4e93 = new L.RegularPolygonMarker(
+                [9.9674277, 76.2454436],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+            var map_77ab7ab6dc1bc44cdbf13ac6ee82a1da = L.map(
+                "map_77ab7ab6dc1bc44cdbf13ac6ee82a1da",
+                {
+                    center: [22.5726459, 88.3638953],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_48cb513887ae36b7f0abbc0c971f7315 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_48cb513887ae36b7f0abbc0c971f7315.addTo(map_77ab7ab6dc1bc44cdbf13ac6ee82a1da);
+        
+    
+            var marker_e62ecaf9e0b5aaaa7486248d0ab9a354 = L.marker(
+                [22.5726459, 88.3638953],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_6a5572e18fb82b42071fad3c18fcb53c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06efab38e480fcbb80658ff9b72afe0f = $(`<div id="html_06efab38e480fcbb80658ff9b72afe0f" style="width: 100.0%; height: 100.0%;">Kolkata</div>`)[0];
+                popup_6a5572e18fb82b42071fad3c18fcb53c.setContent(html_06efab38e480fcbb80658ff9b72afe0f);
+            
+        
+
+        marker_e62ecaf9e0b5aaaa7486248d0ab9a354.bindPopup(popup_6a5572e18fb82b42071fad3c18fcb53c)
+        ;
+
+        
+    
+    
+            var marker_3a84736c291db738f58514fcb26c28d7 = L.marker(
+                [24.87047205, 67.08472144429825],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_0405a54e45bc2b7ffd64ba58b5c83888 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f905c6f33f943f18d3aa1d7bea324c6 = $(`<div id="html_9f905c6f33f943f18d3aa1d7bea324c6" style="width: 100.0%; height: 100.0%;">Banglore</div>`)[0];
+                popup_0405a54e45bc2b7ffd64ba58b5c83888.setContent(html_9f905c6f33f943f18d3aa1d7bea324c6);
+            
+        
+
+        marker_3a84736c291db738f58514fcb26c28d7.bindPopup(popup_0405a54e45bc2b7ffd64ba58b5c83888)
+        ;
+
+        
+    
+    
+            var poly_line_bd66109a599ece2cc08710626a71d730 = L.polyline(
+                [[22.5726459, 88.3638953], [24.87047205, 67.08472144429825]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_9f0b9143332244cf5ae2067ce5675b54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0c4b9bd559ff5763042d6384aebc262 = $(`<div id="html_a0c4b9bd559ff5763042d6384aebc262" style="width: 100.0%; height: 100.0%;">Kolkata → Banglore have 2459 flight</div>`)[0];
+                popup_9f0b9143332244cf5ae2067ce5675b54.setContent(html_a0c4b9bd559ff5763042d6384aebc262);
+            
+        
+
+        poly_line_bd66109a599ece2cc08710626a71d730.bindPopup(popup_9f0b9143332244cf5ae2067ce5675b54)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_64dd95da04287fe7e6deb06059b80ab4 = new L.RegularPolygonMarker(
+                [24.87047205, 67.08472144429825],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+            var map_fa6926adeedcb8c709c2aadcbbca6d22 = L.map(
+                "map_fa6926adeedcb8c709c2aadcbbca6d22",
+                {
+                    center: [24.87047205, 67.08472144429825],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9106ba9abd1ff04afd33845363667568 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9106ba9abd1ff04afd33845363667568.addTo(map_fa6926adeedcb8c709c2aadcbbca6d22);
+        
+    
+            var marker_816bcdc0abd31852ac9a171e10f5b410 = L.marker(
+                [24.87047205, 67.08472144429825],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_094a7a802b490c759cbba9c83a5a6bd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b40d6bd2c67a8ef50e1fd6de4302c45 = $(`<div id="html_3b40d6bd2c67a8ef50e1fd6de4302c45" style="width: 100.0%; height: 100.0%;">Banglore</div>`)[0];
+                popup_094a7a802b490c759cbba9c83a5a6bd9.setContent(html_3b40d6bd2c67a8ef50e1fd6de4302c45);
+            
+        
+
+        marker_816bcdc0abd31852ac9a171e10f5b410.bindPopup(popup_094a7a802b490c759cbba9c83a5a6bd9)
+        ;
+
+        
+    
+    
+            var marker_b4df52292b960f4978546b993e26e890 = L.marker(
+                [28.6273928, 77.1716954],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_97b09a940a727d99fa09f9d69f22f959 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc54d1032bcc9335b3deca34805483f5 = $(`<div id="html_bc54d1032bcc9335b3deca34805483f5" style="width: 100.0%; height: 100.0%;">Delhi</div>`)[0];
+                popup_97b09a940a727d99fa09f9d69f22f959.setContent(html_bc54d1032bcc9335b3deca34805483f5);
+            
+        
+
+        marker_b4df52292b960f4978546b993e26e890.bindPopup(popup_97b09a940a727d99fa09f9d69f22f959)
+        ;
+
+        
+    
+    
+            var poly_line_89dcc3c0f801e46bccdba18c30c7b065 = L.polyline(
+                [[24.87047205, 67.08472144429825], [28.6273928, 77.1716954]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_10b70bd6265525799e22969fa9ec33dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0efbde425e36eaa15f0e15d013629e5e = $(`<div id="html_0efbde425e36eaa15f0e15d013629e5e" style="width: 100.0%; height: 100.0%;">Banglore → Delhi have 937 flight</div>`)[0];
+                popup_10b70bd6265525799e22969fa9ec33dd.setContent(html_0efbde425e36eaa15f0e15d013629e5e);
+            
+        
+
+        poly_line_89dcc3c0f801e46bccdba18c30c7b065.bindPopup(popup_10b70bd6265525799e22969fa9ec33dd)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_219c6b0b1c1a033497b58ad6181a0a79 = new L.RegularPolygonMarker(
+                [28.6273928, 77.1716954],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+            var map_244196829edacb55a0fff63d850dcf46 = L.map(
+                "map_244196829edacb55a0fff63d850dcf46",
+                {
+                    center: [24.87047205, 67.08472144429825],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4db40a76460ee2c1882ce9c0d47d3fc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a4db40a76460ee2c1882ce9c0d47d3fc.addTo(map_244196829edacb55a0fff63d850dcf46);
+        
+    
+            var marker_d91a649ca3b1028f04addfda6b7afe8d = L.marker(
+                [24.87047205, 67.08472144429825],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_b148367361d2b3a8ca04affc4f6d710f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fe2a06f828228328e81b45aa9d81ea6 = $(`<div id="html_0fe2a06f828228328e81b45aa9d81ea6" style="width: 100.0%; height: 100.0%;">Banglore</div>`)[0];
+                popup_b148367361d2b3a8ca04affc4f6d710f.setContent(html_0fe2a06f828228328e81b45aa9d81ea6);
+            
+        
+
+        marker_d91a649ca3b1028f04addfda6b7afe8d.bindPopup(popup_b148367361d2b3a8ca04affc4f6d710f)
+        ;
+
+        
+    
+    
+            var marker_95752ee50b3631a1335b3dd4833c0ff9 = L.marker(
+                [28.6138954, 77.2090057],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_75acda68bba6d3a5389e9697837b5188 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84e9c8c0db306173f7073549e7038ed3 = $(`<div id="html_84e9c8c0db306173f7073549e7038ed3" style="width: 100.0%; height: 100.0%;">New Delhi</div>`)[0];
+                popup_75acda68bba6d3a5389e9697837b5188.setContent(html_84e9c8c0db306173f7073549e7038ed3);
+            
+        
+
+        marker_95752ee50b3631a1335b3dd4833c0ff9.bindPopup(popup_75acda68bba6d3a5389e9697837b5188)
+        ;
+
+        
+    
+    
+            var poly_line_3acce43776460537c0bc0dd74ff22301 = L.polyline(
+                [[24.87047205, 67.08472144429825], [28.6138954, 77.2090057]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_3bef4fcff90703277f7d69c0bec48654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1eb9e471c68f987ac27a2759c8ddeb57 = $(`<div id="html_1eb9e471c68f987ac27a2759c8ddeb57" style="width: 100.0%; height: 100.0%;">Banglore → New Delhi have 689 flight</div>`)[0];
+                popup_3bef4fcff90703277f7d69c0bec48654.setContent(html_1eb9e471c68f987ac27a2759c8ddeb57);
+            
+        
+
+        poly_line_3acce43776460537c0bc0dd74ff22301.bindPopup(popup_3bef4fcff90703277f7d69c0bec48654)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_63c820115f434f65756b7e987cbbe160 = new L.RegularPolygonMarker(
+                [28.6138954, 77.2090057],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+            var map_d91ee9ef1c34a616c71c4a9146433aba = L.map(
+                "map_d91ee9ef1c34a616c71c4a9146433aba",
+                {
+                    center: [19.0785451, 72.878176],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_041649c4784e8d0d1b00af7488f10e20 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_041649c4784e8d0d1b00af7488f10e20.addTo(map_d91ee9ef1c34a616c71c4a9146433aba);
+        
+    
+            var marker_3b5faef81b99e8f3946e80e5e13cdfda = L.marker(
+                [19.0785451, 72.878176],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_b3ee201f8c91d5adf8ab18e22383ae15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_436e7f33d1c1e9092147daf5c746b352 = $(`<div id="html_436e7f33d1c1e9092147daf5c746b352" style="width: 100.0%; height: 100.0%;">Mumbai</div>`)[0];
+                popup_b3ee201f8c91d5adf8ab18e22383ae15.setContent(html_436e7f33d1c1e9092147daf5c746b352);
+            
+        
+
+        marker_3b5faef81b99e8f3946e80e5e13cdfda.bindPopup(popup_b3ee201f8c91d5adf8ab18e22383ae15)
+        ;
+
+        
+    
+    
+            var marker_8a722f83bd68da7bbceef24f8025b94a = L.marker(
+                [17.360589, 78.4740613],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_0779ba6cdea8e508d2699c9630c4e3ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4332e6455cab073e07745e56dbfb586 = $(`<div id="html_e4332e6455cab073e07745e56dbfb586" style="width: 100.0%; height: 100.0%;">Hyderabad</div>`)[0];
+                popup_0779ba6cdea8e508d2699c9630c4e3ea.setContent(html_e4332e6455cab073e07745e56dbfb586);
+            
+        
+
+        marker_8a722f83bd68da7bbceef24f8025b94a.bindPopup(popup_0779ba6cdea8e508d2699c9630c4e3ea)
+        ;
+
+        
+    
+    
+            var poly_line_d641e9cdddaed007c92cd67ee57bd012 = L.polyline(
+                [[19.0785451, 72.878176], [17.360589, 78.4740613]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_6598103aa68410102d1c3616e14b9b7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e2a6969745c973375f4eda7abe85a3a = $(`<div id="html_0e2a6969745c973375f4eda7abe85a3a" style="width: 100.0%; height: 100.0%;">Mumbai → Hyderabad have 572 flight</div>`)[0];
+                popup_6598103aa68410102d1c3616e14b9b7f.setContent(html_0e2a6969745c973375f4eda7abe85a3a);
+            
+        
+
+        poly_line_d641e9cdddaed007c92cd67ee57bd012.bindPopup(popup_6598103aa68410102d1c3616e14b9b7f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_4988d12e23c1ce35d888328f878f9920 = new L.RegularPolygonMarker(
+                [17.360589, 78.4740613],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+            var map_7665112df100a562158cfd9d8521ff0f = L.map(
+                "map_7665112df100a562158cfd9d8521ff0f",
+                {
+                    center: [13.0836939, 80.270186],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2a0756d364622d0d9e49e0f1c608253 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c2a0756d364622d0d9e49e0f1c608253.addTo(map_7665112df100a562158cfd9d8521ff0f);
+        
+    
+            var marker_187d6383eebb6f18fc73306b212d244c = L.marker(
+                [13.0836939, 80.270186],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_d9bbf7ddf5d97acdff388c11c73442a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aa93a7845a896ee7a5ea7405f7f9ad2 = $(`<div id="html_3aa93a7845a896ee7a5ea7405f7f9ad2" style="width: 100.0%; height: 100.0%;">Chennai</div>`)[0];
+                popup_d9bbf7ddf5d97acdff388c11c73442a1.setContent(html_3aa93a7845a896ee7a5ea7405f7f9ad2);
+            
+        
+
+        marker_187d6383eebb6f18fc73306b212d244c.bindPopup(popup_d9bbf7ddf5d97acdff388c11c73442a1)
+        ;
+
+        
+    
+    
+            var marker_4a248a8d495d157a6af934627fc01844 = L.marker(
+                [22.5726459, 88.3638953],
+                {}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_ec92dcee68d972f8e70614a30333e1b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38fb6cea30c35361c8d93d637d0d2227 = $(`<div id="html_38fb6cea30c35361c8d93d637d0d2227" style="width: 100.0%; height: 100.0%;">Kolkata</div>`)[0];
+                popup_ec92dcee68d972f8e70614a30333e1b7.setContent(html_38fb6cea30c35361c8d93d637d0d2227);
+            
+        
+
+        marker_4a248a8d495d157a6af934627fc01844.bindPopup(popup_ec92dcee68d972f8e70614a30333e1b7)
+        ;
+
+        
+    
+    
+            var poly_line_8178ac4a2a716426a027e69f3f88ea9e = L.polyline(
+                [[13.0836939, 80.270186], [22.5726459, 88.3638953]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+    
+        var popup_3c1602694aed248470be509a6bc463a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0a9021305cf65863ab39a452c2b5007 = $(`<div id="html_f0a9021305cf65863ab39a452c2b5007" style="width: 100.0%; height: 100.0%;">Chennai → Kolkata have 319 flight</div>`)[0];
+                popup_3c1602694aed248470be509a6bc463a2.setContent(html_f0a9021305cf65863ab39a452c2b5007);
+            
+        
+
+        poly_line_8178ac4a2a716426a027e69f3f88ea9e.bindPopup(popup_3c1602694aed248470be509a6bc463a2)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_717584af934d0a3c5e9885239b852a20 = new L.RegularPolygonMarker(
+                [22.5726459, 88.3638953],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_a0660ae310f29ef84eb48bfe7a16ab9b);
+        
+</script>
+</html>
