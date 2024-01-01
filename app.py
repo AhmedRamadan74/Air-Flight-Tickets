@@ -430,7 +430,10 @@ if pages == "Predict price your ticket":
         "The place of take-off :", df_min_max_duration.Source.unique().tolist()
     )
     Destination = st.selectbox(
-        "The landing place :", df_min_max_duration.Destination.unique().tolist()
+        "The landing place :",
+        df_min_max_duration[df_min_max_duration[Source] == "Banglore"][
+            "Destination"
+        ].tolist(),
     )
 
     Date_of_Journey = st.date_input("The date of journey")
