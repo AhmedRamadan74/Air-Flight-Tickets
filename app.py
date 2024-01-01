@@ -426,8 +426,12 @@ if pages == "Predict price your ticket":
     Airline = st.selectbox(
         " An airline that booked a ticket :", df.Airline.unique().tolist()
     )
-    Source = st.selectbox("The place of take-off :", df.Source.unique().tolist())
-    Destination = st.selectbox("The landing place :", df.Destination.unique().tolist())
+    Source = st.selectbox(
+        "The place of take-off :", df_min_max_duration.Source.unique().tolist()
+    )
+    Destination = st.selectbox(
+        "The landing place :", df_min_max_duration.Destination.unique().tolist()
+    )
 
     Date_of_Journey = st.date_input("The date of journey")
     Dep_Time = st.time_input("Time of take-off ")
