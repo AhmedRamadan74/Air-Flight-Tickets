@@ -440,7 +440,16 @@ if pages == "Predict price your ticket":
     Dep_Time = st.time_input("Time of take-off ")
 
     st.write(f"represent if flight fly from Source to Destination with rest or not :")
-    Total_Stops = st.slider("0 represented to no rest", 0, 3, 1)
+    value_total_stop = (
+        df_min_max_duration[
+            (df_min_max_duration["Source"] == Source)
+            & (df_min_max_duration["Destination"] == Destination)
+        ]["Total_Stops"]
+        .unique()
+        .tolist()
+    )
+    Total_Stops = st.selectbox("0 represented to no rest : ", value_total_stop)
+    Total_Stops = int(Total_Stops)
     Additional_Info = st.selectbox(
         "some additional info required :", df.Additional_Info.unique().tolist()
     )
