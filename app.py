@@ -119,7 +119,7 @@ if pages == "Analysis":
         # Q1
         st.subheader(" 1- What is the most popular airline company ?")
         # pandas
-        data1 = df.Airline.value_counts().reset_index()
+        data1 = df['Airline'].value_counts().reset_index()
         fig = bar(
             data1, "Airline", "count", "What is the most popular airline company ?"
         )
