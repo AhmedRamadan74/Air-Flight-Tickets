@@ -119,9 +119,9 @@ if pages == "Analysis":
         # Q1
         st.subheader(" 1- What is the most popular airline company ?")
         # pandas
-        data = df.Airline.value_counts().reset_index()
+        data1 = df.Airline.value_counts().reset_index()
         fig = bar(
-            data, "Airline", "count", "What is the most popular airline company ?"
+            data1, "Airline", "count", "What is the most popular airline company ?"
         )
         st.plotly_chart(fig)
         st.write("- Jet Airways is the most popular airline to fly")
