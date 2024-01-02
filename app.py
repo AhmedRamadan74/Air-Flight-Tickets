@@ -57,6 +57,12 @@ if pages == "Data":
     st.write(
         "This data was collected in 2019 and its about detials of air flight tickets in india and in this project will predict price of tickets."
     )
+    st.write( 'The Air flights has specifc from city (Source) to city (Destnation) Like :' )
+    st.write('Delhi To Cochin')
+    st.write('Kolkata To Banglore')
+    st.write('Banglore To Delhi and New Delhi')
+    st.write('Mumbai To Hyderabad')
+    st.write('Chennai To Kolkata') 
     st.write(
         """
              | Attribute | Description |
