@@ -12,6 +12,7 @@ import datetime
 # layout
 st.set_page_config(page_title="Air Flight Tickets", layout="wide")
 origanal_data = pd.read_excel("Data_Train.xlsx")
+df = pd.read_csv("clean_data.csv")
 
 
 # Visualization Function
