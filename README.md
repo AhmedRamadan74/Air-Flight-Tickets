@@ -15,6 +15,8 @@ To analyze data and know what is the important features that influence in air fl
 After analyze data  Now i can predict this ticket price.
 
 [Link website of  analysis deployment](https://air-flight-tickets.streamlit.app/)
+
 [Link website of  Predict ticket price deployment](https://air-flight-tickets-predict.streamlit.app/)
+
 [Link Github of notebook Predict ticket price deployment](https://github.com/AhmedRamadan74/Air-Flight-Tickets-predict/tree/main)
 
