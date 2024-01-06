@@ -18,5 +18,5 @@ After analyze data  Now i can predict this ticket price.
 
 [Link website of  Predict ticket price deployment](https://air-flight-tickets-predict.streamlit.app/)
 
-[Link Github of notebook Predict ticket price deployment](https://github.com/AhmedRamadan74/Air-Flight-Tickets-predict/tree/main)
+[Link Github of notebook Predict ticket price and deployment](https://github.com/AhmedRamadan74/Air-Flight-Tickets-predict/tree/main)
 
